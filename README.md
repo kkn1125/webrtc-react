@@ -49,47 +49,311 @@
 
 ## 파일 구조
 
-└┬ 📂 webrtc-react/
-　├┬ 📂 client/
-　│├─ 📂 public/
-　│├┬ 📂 src/
-　││├┬ 📂 containers/
-　│││├─ 📄 HomePage.js
-　│││└─ 📄 RoomPage.js
-　││├┬ 📂 reducers/
-　│││├─ 📄 index.js
-　│││└─ 📄 roomReducer.js
-　││├┬ 📂 store/
-　│││└─ 📄 store.js
-　││├┬ 📂 styles/
-　│││└─ 📄 common.js
-　││├─ 📄 App.js
-　││├─ 📄 App.test.js
-　││├─ 📄 index.js
-　││├─ 📄 logo.svg
-　││├─ 📄 reportWebVitals.js
-　││├─ 📄 setupProxy.js
-　││└─ 📄 setupTests.js
-　│├─ 📄 .env
-　│├─ 📄 .gitignore
-　│├─ 📄 localhost-key.pem
-　│├─ 📄 localhost.pem
-　│├─ 📄 package.json
-　│├─ 📄 README.md
-　│├─ 📄 rootca.crt
-　│├─ 📄 rootca.csr
-　│├─ 📄 rootca.key
-　│├─ 📄 rtc-video-room-cert.pem
-　│├─ 📄 rtc-video-room-key.pem
-　│└─ 📄 yarn.lock
-　├─ 📄 .env
-　├─ 📄 .gitignore
-　├─ 📄 package.json
-　├─ 📄 README.md
-　├─ 📄 rtc-video-room-cert.pem
-　├─ 📄 rtc-video-room-key.pem
-　├─ 📄 server.js
-　└─ 📄 yarn.lock
+<div id="app" class="p-2 border rounded-3 display-board">
+  <div class="parsed-data" style="font-size: 16px">
+    └┬
+    <span style="font-size: 16px">
+      📂
+      <span style="border-bottom: 1px solid gray; font-weight: 600">
+        <span class="">webrtc-react/</span>
+      </span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　├┬
+    <span style="font-size: 16px">
+      📂
+      <span style="border-bottom: 1px solid gray; font-weight: 600">
+        <span class="">client/</span>
+      </span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│├─
+    <span style="font-size: 16px">
+      📂
+      <span style="border-bottom: 1px solid gray; font-weight: 600">
+        <span class="">public/</span>
+      </span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│├┬
+    <span style="font-size: 16px">
+      📂
+      <span style="border-bottom: 1px solid gray; font-weight: 600">
+        <span class="">src/</span>
+      </span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　││├┬
+    <span style="font-size: 16px">
+      📂
+      <span style="border-bottom: 1px solid gray; font-weight: 600">
+        <span class="">containers/</span>
+      </span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│││├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">HomePage.js</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│││└─
+    <span style="font-size: 16px">
+      📄
+      <span class="">RoomPage.js</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　││├┬
+    <span style="font-size: 16px">
+      📂
+      <span style="border-bottom: 1px solid gray; font-weight: 600">
+        <span class="">reducers/</span>
+      </span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│││├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">index.js</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│││└─
+    <span style="font-size: 16px">
+      📄
+      <span class="">roomReducer.js</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　││├┬
+    <span style="font-size: 16px">
+      📂
+      <span style="border-bottom: 1px solid gray; font-weight: 600">
+        <span class="">store/</span>
+      </span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│││└─
+    <span style="font-size: 16px">
+      📄
+      <span class="">store.js</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　││├┬
+    <span style="font-size: 16px">
+      📂
+      <span style="border-bottom: 1px solid gray; font-weight: 600">
+        <span class="">styles/</span>
+      </span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│││└─
+    <span style="font-size: 16px">
+      📄
+      <span class="">common.js</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　││├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">App.js</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　││├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">App.test.js</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　││├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">index.js</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　││├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">logo.svg</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　││├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">reportWebVitals.js</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　││├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">setupProxy.js</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　││└─
+    <span style="font-size: 16px">
+      📄
+      <span class="">setupTests.js</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">.env</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">.gitignore</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">localhost-key.pem</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">localhost.pem</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">package.json</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">README.md</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">rootca.crt</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">rootca.csr</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">rootca.key</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">rtc-video-room-cert.pem</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">rtc-video-room-key.pem</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　│└─
+    <span style="font-size: 16px">
+      📄
+      <span class="">yarn.lock</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">.env</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">.gitignore</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">package.json</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">README.md</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">rtc-video-room-cert.pem</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">rtc-video-room-key.pem</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　├─
+    <span style="font-size: 16px">
+      📄
+      <span class="">server.js</span>
+    </span>
+  </div>
+  <div class="parsed-data" style="font-size: 16px">
+    　└─
+    <span style="font-size: 16px">
+      📄
+      <span class="">yarn.lock</span>
+    </span>
+  </div>
+</div>
 
 ## Licence
 
